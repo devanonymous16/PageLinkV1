@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+:root{
+    --cor-primaria-botao: rgb(0, 0, 0);
+    --cor-hover-botao:#404040;
+    --cor-sedundaria-botao: rgb(255, 255, 255);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+body{
+    background-color: #dedede;   
+}
+
+.btn-links img{
+    width: 150px;
+    height: 150px;
+    border: solid 10px black;
+    border-radius: 50%;
+    margin: 25px auto;
+}
+
+.btn-links h1{
+    color: black;
+    font-size: 40px;
+}
+
+/* Estilização do botão*/
+.btn-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    background-color:white;
+    margin: 200px auto;
+    gap: 6.51px;
+    border-radius: 15px;
+    min-width: 38vw;
+    min-height: 38vh;
+}
+
+.btn-links a{
+    background-color: var(--cor-primaria-botao);
+    color: var(--cor-sedundaria-botao);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    padding: 1px;
+    border: solid 2px black;
+    text-align: center;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 22px;
+}
+
+.btn-links a:hover{
+    background-color:var(--cor-hover-botao);
+}
+.btn-links a:active{
+    color:black;
+    background-color:var(--cor-sedundaria-botao);
+}
+
+.name-bar{
+    color: black;
+    display: center;
+    font-size: 12px;
+
+}
